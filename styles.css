@@ -780,15 +780,13 @@ textarea {
 .buttons-filter-list {
     display: flex;
     flex-wrap: wrap;
-
     gap: 24px;
-    max-width: 263px;
+    max-width: 270px;
 }
 
-.buttons-filter__item {
-    display: flex;
-    flex-basis: calc((100% - 183px)/3);
-}
+/* .buttons-filter__item {
+    
+} */
 
 .button-filter {
     padding: 8px 16px;
