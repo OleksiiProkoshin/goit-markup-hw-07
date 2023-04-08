@@ -175,7 +175,9 @@ img {
     padding-bottom: 96px;
 }
 
-/* .our-goals__list-item {} */
+.our-goals__list_icon {
+    display: none;
+}
 
 .our-goals__hdr {
     font-weight: 700;
@@ -194,6 +196,10 @@ img {
     letter-spacing: 0.02em;
     color: var(--Body-text-color-SLATE);
     padding-top: 8px;
+}
+
+.wawd {
+    display: none;
 }
 
 /* ===============OUR TEAM================= */
@@ -274,11 +280,6 @@ img {
     justify-content: center;
     transition: background-color var(--transition-duration-and-funk);
 }
-
-/* .soc-list__link:hover,
-.soc-list__link:focus {
-    background-color: var(--Pressed-state-color-OCEAN);
-} */
 
 .soc-list__icon {
     fill: var(--cloud);
@@ -792,10 +793,6 @@ textarea {
     max-width: 270px;
 }
 
-/* .buttons-filter__item {
-    
-} */
-
 .button-filter {
     padding: 8px 16px;
     color: var(--Primary-Brand-color-Iris);
@@ -840,13 +837,9 @@ textarea {
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-
-
-.portfolio__card_link {}
-
-.portfolio__card_wrap {}
-
-.portfolio__overlay {}
+.portfolio__overlay {
+    display: none;
+}
 
 .portfolio__info {
     color: var(--Headings-color-Navyblue);
