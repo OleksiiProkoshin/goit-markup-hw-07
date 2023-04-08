@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/tab.css">
+    <link rel="stylesheet" href="./css/dsktp.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,11 +22,25 @@
         <nav class="header__nav">
             <div class="header__wrapper container">
                 <a class="web link logo" href="./index.html">web<span class="studio">Studio</span></a>
+                <ul class="list header__menu-list">
+                    <li class="menu-link-item"><a class="menu-link link" href="./index.html">Studio</a></li>
+                    <li class="menu-link-item"><a class="menu-link link current" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="menu-link-item"><a class="menu-link link" href="#">Contacts</a></li>
+                </ul>
                 <button type="button" class="header__menu-btn " data-menu-open>
                     <svg width="32" height="22" class="header_menu-hamburger-icon">
                         <use href="./img/icons.svg#icon-menu-hamburger"></use>
                     </svg></button>
             </div>
+
+            <address class="list header__contacts">
+                <ul class="list header__contacts_list">
+                    <li><a class="header__contacts_adress link " href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li><a class="header__contacts_adress link " href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
         </nav>
         <div class="burger__backdrop is-hidden" data-menu>
             <div class="burger">
@@ -90,16 +106,20 @@
                 <li class="buttons-filter__item"> <button class="button-filter" type="button">Design</button>
                 <li class="buttons-filter__item"> <button class="button-filter" type="button">Marketing</button>
             </ul>
-            <ul class="list portfolio__container container">
+            <ul class="list portfolio__container">
                 <li class="portfolio__card"><a class="link portfolio__card_link" href="#">
                         <div class="portfolio__card_wrap">
                             <picture>
                                 <source srcset="
-                                ./img/portfolio/mobile/bank-1x.jpg 1x,
-                                ./img/portfolio/mobile/bank-2x.jpg 2x" media="( and min-width: 380px)" />
+                                ./img/portfolio/tab/bank-1x.jpg 1x,
+                                ./img/portfolio/tab/bank-2x.jpg 2x" media="(min-width: 768px)" />
 
-                                <img src="./img/portfolio/mobile/bank-1x.jpg" alt="Banking App Interface" width="396"
-                                    height="280">
+                                <source srcset="
+                                ./img/portfolio/mobile/bank-1x.jpg 1x,
+                                ./img/portfolio/mobile/bank-2x.jpg 2x" media="(max-width: 767px)" />
+
+                                <img src="./img/portfolio/tab/bank-1x.jpg" alt="Banking App Interface" width="356"
+                                    height="300">
                             </picture>
                             <!-- <p class="portfolio__overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -118,11 +138,15 @@
                         <div class="portfolio__card_wrap">
                             <picture>
                                 <source srcset="
+                                    ./img/portfolio/tab/payment-1x.jpg 1x,
+                                    ./img/portfolio/tab/payment-2x.jpg 2x" media="(min-width: 768px)" />
+
+                                <source srcset="
                                     ./img/portfolio/mobile/payment-1x.jpg 1x,
                                     ./img/portfolio/mobile/payment-2x.jpg 2x" media="( and min-width: 380px)" />
 
-                                <img src="./img/portfolio/mobile/payment-1x.jpg" alt="Banking App Interface" width="396"
-                                    height="280">
+                                <img src="./img/portfolio/tab/payment-1x.jpg" alt="Cashless Payment" width="356"
+                                    height="300">
                             </picture>
                             <!-- <p class="portfolio__overlay">
                                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -141,11 +165,15 @@
                         <div class="portfolio__card_wrap">
                             <picture>
                                 <source srcset="
+                                    ./img/portfolio/tab/meditation-1x.jpg 1x,
+                                    ./img/portfolio/tab/meditation-2x.jpg 2x" media="(min-width: 768px)" />
+
+                                <source srcset="
                                     ./img/portfolio/mobile/meditation-1x.jpg 1x,
                                     ./img/portfolio/mobile/meditation-2x.jpg 2x" media="( and min-width: 380px)" />
 
-                                <img src="./img/portfolio/mobile/meditation-1x.jpg" alt="Banking App Interface"
-                                    width="396" height="280">
+                                <img src="./img/portfolio/tab/meditation-1x.jpg" alt="Meditation App" width="356"
+                                    height="300">
                             </picture>
                             <!-- <p class="portfolio__overlay">
                                                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -164,11 +192,13 @@
                         <div class="portfolio__card_wrap">
                             <picture>
                                 <source srcset="
+                                    ./img/portfolio/tab/taxi-1x.jpg 1x,
+                                    ./img/portfolio/tab/taxi-2x.jpg 2x" media="(min-width: 768px)" />
+                                <source srcset="
                                     ./img/portfolio/mobile/taxi-1x.jpg 1x,
                                     ./img/portfolio/mobile/taxi-2x.jpg 2x" media="( and min-width: 380px)" />
 
-                                <img src="./img/portfolio/mobile/taxi-1x.jpg" alt="Banking App Interface" width="396"
-                                    height="280">
+                                <img src="./img/portfolio/tab/taxi-1x.jpg" alt="Taxi Service" width="356" height="300">
                             </picture>
                             <!-- <p class="portfolio__overlay">
                                                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -187,11 +217,14 @@
                         <div class="portfolio__card_wrap">
                             <picture>
                                 <source srcset="
+                                    ./img/portfolio/tab/illustrations-1x.jpg 1x,
+                                    ./img/portfolio/tab/illustrations-2x.jpg 2x" media="(min-width: 768px)" />
+                                <source srcset="
                                     ./img/portfolio/mobile/illustrations-1x.jpg 1x,
                                     ./img/portfolio/mobile/illustrations-2x.jpg 2x" media="( and min-width: 380px)" />
 
-                                <img src="./img/portfolio/mobile/illustrations-1x.jpg" alt="Banking App Interface"
-                                    width="396" height="280">
+                                <img src="./img/portfolio/tab/illustrations-1x.jpg" alt="Screen Illustrations"
+                                    width="356" height="300">
                             </picture>
                             <!-- <p class="portfolio__overlay">
                                                             14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -210,11 +243,14 @@
                         <div class="portfolio__card_wrap">
                             <picture>
                                 <source srcset="
+                                    ./img/portfolio/tab/online-1x.jpg 1x,
+                                    ./img/portfolio/tab/online-2x.jpg 2x" media="(min-width: 768px)" />
+                                <source srcset="
                                     ./img/portfolio/mobile/online-1x.jpg 1x,
                                     ./img/portfolio/mobile/online-2x.jpg 2x" media="( and min-width: 380px)" />
 
-                                <img src="./img/portfolio/mobile/online-1x.jpg" alt="Banking App Interface" width="396"
-                                    height="280">
+                                <img src="./img/portfolio/tab/online-1x.jpg" alt="Online Courses" width="356"
+                                    height="300">
                             </picture>
                             <!-- <p class="portfolio__overlay">
                                                             14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -233,11 +269,14 @@
                         <div class="portfolio__card_wrap">
                             <picture>
                                 <source srcset="
+                                    ./img/portfolio/tab/stories-1x.jpg 1x,
+                                    ./img/portfolio/tab/stories-2x.jpg 2x" media="(min-width: 768px)" />
+                                <source srcset="
                                     ./img/portfolio/mobile/stories-1x.jpg 1x,
                                     ./img/portfolio/mobile/stories-2x.jpg 2x" media="( and min-width: 380px)" />
 
-                                <img src="./img/portfolio/mobile/stories-1x.jpg" alt="Banking App Interface" width="396"
-                                    height="280">
+                                <img src="./img/portfolio/tab/stories-1x.jpg" alt="Instagram Stories Concept"
+                                    width="356" height="300">
                             </picture>
                             <!-- <p class="portfolio__overlay">
                                                             14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -256,11 +295,13 @@
                         <div class="portfolio__card_wrap">
                             <picture>
                                 <source srcset="
+                                    ./img/portfolio/tab/food-1x.jpg 1x,
+                                    ./img/portfolio/tab/food-2x.jpg 2x" media="(min-width: 768px)" />
+                                <source srcset="
                                     ./img/portfolio/mobile/food-1x.jpg 1x,
                                     ./img/portfolio/mobile/food-2x.jpg 2x" media="( and min-width: 380px)" />
 
-                                <img src="./img/portfolio/mobile/food-1x.jpg" alt="Banking App Interface" width="396"
-                                    height="280">
+                                <img src="./img/portfolio/tab/food-1x.jpg" alt="Organic Food" width="356" height="300">
                             </picture>
                             <!-- <p class="portfolio__overlay">
                                                             14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -280,9 +321,12 @@
                                 <source srcset="
                                     ./img/portfolio/mobile/coffee-1x.jpg 1x,
                                     ./img/portfolio/mobile/coffee-2x.jpg 2x" media="( and min-width: 380px)" />
+                                <source srcset="
+                                    ./img/portfolio/tab/coffee-1x.jpg 1x,
+                                    ./img/portfolio/tab/coffee-2x.jpg 2x" media="(min-width: 768px)" />
 
-                                <img src="./img/portfolio/mobile/coffee-1x.jpg" alt="Banking App Interface" width="396"
-                                    height="280">
+                                <img src="./img/portfolio/tab/coffee-1x.jpg" alt="Fresh Coffee" width="356"
+                                    height="300">
                             </picture>
                             <!-- <p class="portfolio__overlay">
                                                             14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -300,8 +344,8 @@
             </ul>
         </div>
     </section>
-    <footer class="footer">
-        <div class="footer__container container">
+    <footer class="footer container">
+        <div class="footer__container ">
             <div class="footer__wraper section">
                 <a class="footer-web link" href="./index.html">web<span class="footer-studio">Studio</span></a>
                 <p class="footer-goal">Increase the flow of customers and sales for your business with digital marketing
@@ -332,21 +376,20 @@
                         </a> </li>
                 </ul>
             </div>
-            <div class="footer__subscribe section">
-                <h3 class="footer__subscribe_hdr">Subscribe</h3>
-                <form>
-                    <label for="useremail">
-                        <input class="footer__subscribe_input" type="email" name="useremail" id="useremail" required
-                            placeholder="E-mail">
-                    </label>
-                    <button class="footer__subscribe_button" type="submit">Subscribe
-                        <svg width="24" height="20" class="footer__subscribe_button-icon">
-                            <use href="./img/icons.svg#icon-send"></use>
-                        </svg>
-                    </button>
-                </form>
-            </div>
         </div>
+        <div class="footer__subscribe section">
+            <h3 class="footer__subscribe_hdr">Subscribe</h3>
+            <form>
+                <label for="useremail">
+                    <input class="footer__subscribe_input" type="email" name="useremail" id="useremail" required
+                        placeholder="E-mail">
+                </label>
+                <button class="footer__subscribe_button" type="submit">Subscribe
+                    <svg width="24" height="20" class="footer__subscribe_button-icon">
+                        <use href="./img/icons.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </form>
         </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>

@@ -96,6 +96,14 @@ img {
     color: var(--Headings-color-Navyblue);
 }
 
+.header__menu-list {
+    display: none;
+}
+
+.header__contacts {
+    display: none;
+}
+
 .header__menu-btn {
     background-color: transparent;
     padding: 0;
@@ -111,14 +119,14 @@ img {
     background-position: 50% 50%;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(./img/hero/mobile/mobile-hero-1x.jpg);
+        url(../img/hero/mobile/mobile-hero-1x.jpg);
 }
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .box {
-        background-image: url(./img/hero/mobile/mobile-hero-2x.jpg);
+        background-image: url(../img/hero/mobile/mobile-hero-2x.jpg);
     }
 }
 
