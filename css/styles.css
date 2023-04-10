@@ -54,7 +54,7 @@ img {
 .container {
     padding: 0 16px;
     margin: 0 auto;
-    width: 448px;
+    max-width: 428px;
 }
 
 .section {
@@ -111,8 +111,8 @@ img {
 }
 
 /* ============HERO============ */
+
 .hero {
-    position: relative;
     background-color: var(--Headings-color-Navyblue);
     height: 432px;
     background-repeat: no-repeat;
@@ -120,6 +120,8 @@ img {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
         url(../img/hero/mobile/mobile-hero-1x.jpg);
+    max-width: 428px;
+    margin: 0 auto;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -130,8 +132,18 @@ img {
     }
 }
 
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 72px;
+    padding: 112px 0;
+    position: relative;
+    align-items: center;
+}
+
 .hero__hdr {
-    /* max-width: 320px; */
+    max-width: 320px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -139,7 +151,6 @@ img {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--white);
-    padding: 112px 38px 0 38px;
 }
 
 .hero__order-butn {
@@ -285,12 +296,12 @@ img {
     fill: var(--cloud);
 }
 
-/* ==============COSTUMERS================ */
-.costumers {
+/* ==============CUSTUMERS================ */
+.custumers {
     padding-bottom: 96px;
 }
 
-.costumers-hdr {
+.custumers-hdr {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -408,9 +419,21 @@ img {
     padding-top: 16px;
 }
 
+.footer__soc-list__link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--Primary-Brand-color-Iris);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .footer__subscribe {
     display: flex;
     flex-direction: column;
+    min-width: 398px;
+    margin: 0 auto;
 }
 
 .footer__subscribe_hdr {
@@ -425,13 +448,13 @@ img {
 .footer__subscribe_input {
     background-color: transparent;
     color: var(--white);
-    width: 398px;
+    width: 100%;
     height: 40px;
     opacity: 0.3;
     border: 1px solid #FFFFFF;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    margin: 16px 0 0 16px;
+    margin-top: 16px;
     padding-left: 31px;
 }
 

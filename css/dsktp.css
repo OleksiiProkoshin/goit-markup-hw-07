@@ -22,7 +22,7 @@
     .container {
         padding: 0 16px;
         margin: 0 auto;
-        width: 1158px;
+        min-width: 1158px;
     }
 
     /* ================HEADER================== */
@@ -63,11 +63,31 @@
         }
     }
 
-    .header__wrapper {
-        position: relative;
+    /* ===============HERO======================= */
+
+    .hero {
+        padding-bottom: 188px;
+        max-width: 1440px;
+        margin: 0 auto;
+        height: auto;
     }
 
-    /* ===============HERO======================= */
+    .hero__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+        padding-top: 188px;
+    }
+
+    .hero__hdr {
+        padding: 0;
+        display: block;
+    }
+
+    .hero__order-butn {
+        margin: 0;
+    }
 
     .hero__order-butn:hover,
     .hero__order-butn:focus {
@@ -75,6 +95,10 @@
     }
 
     /* ===============OUR GOALS============== */
+
+    .our-goals {
+        margin-top: 24px;
+    }
 
     .our-goals__list {
         flex-wrap: nowrap;
@@ -153,6 +177,7 @@
     .customers-list {
         max-width: 1158px;
         flex-wrap: nowrap;
+        padding-top: 72px;
     }
 
     .customers__list-item {
@@ -182,18 +207,24 @@
     .footer {
         flex-direction: row;
         justify-content: start;
-        width: 1440px;
+        min-width: 1440px;
+    }
+
+    .footer-main__container {
+        flex-wrap: nowrap;
+        max-width: 100%;
     }
 
     .footer__container {
         align-content: flex-start;
-        align-items: center;
-        gap: 120px;
-        margin-left: 140px;
+        gap: 100px;
+        margin-left: 0;
     }
 
     .footer__wraper {
         padding-top: 100px;
+        justify-content: flex-start;
+        display: block;
     }
 
     .footer-web {
@@ -202,6 +233,8 @@
 
     .footer__subscribe {
         margin-left: 80px;
+        padding-top: 100px;
+        display: block;
     }
 
     .footer__subscribe_hdr {
@@ -215,7 +248,7 @@
 
     .footer__subscribe_button {
         left: 290px;
-        top: 120px;
+        top: 123px;
     }
 
     .footer__subscribe_button:focus,
@@ -230,6 +263,10 @@
     .footer__subscribe_input:focus-within {
         background-color: var(--Headings-color-Navyblue);
         color: var(--white);
+    }
+
+    .footer-cos_hdr {
+        padding: 0;
     }
 
     .footer__soc-list__link {

@@ -22,16 +22,15 @@
     .container {
         padding: 0 16px;
         margin: 0 auto;
-        width: 768px;
+        min-width: 768px;
     }
 
     /* ==========HEADER============== */
-    .header__nav {
-        padding-left: 16px;
-    }
+
 
     .header__wrapper {
         justify-content: unset;
+        position: relative;
     }
 
     .header__menu-list {
@@ -94,8 +93,13 @@
 
     /* ==========HERO============== */
 
+    .hero__container {
+        gap: 36px;
+        padding-top: 112px;
+    }
+
     .hero__hdr {
-        max-width: 572px;
+        min-width: 496px;
         font-weight: 700;
         font-size: 56px;
         line-height: 1.07;
@@ -105,13 +109,13 @@
     .hero__order-butn {
         display: block;
         position: unset;
-        margin-top: 36px;
     }
 
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../img/hero/tab/hero-1x.jpg);
+        max-width: 768px;
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -162,6 +166,7 @@
         margin: 0 auto;
         gap: 24px;
         max-width: 584px;
+        padding: 72px 0 96px;
     }
 
     .customers__list-item {
@@ -173,11 +178,15 @@
     }
 
     /* ==========FOOTER============== */
+    .footer-main__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     .footer__container {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        gap: 24px;
+        margin-left: 92px;
     }
 
     .footer__wraper {
@@ -185,7 +194,7 @@
     }
 
     .footer-cos_hdr {
-        margin: 0 auto;
+        margin: 0;
         padding-top: 62px;
     }
 
@@ -200,7 +209,7 @@
     .footer__subscribe {
         padding: 72px 0 96px 0;
         position: relative;
-        margin-left: 55px;
+        margin-left: 92px;
     }
 
     .footer__subscribe_hdr {
@@ -209,8 +218,8 @@
 
     .footer__subscribe_button {
         position: absolute;
-        left: 376px;
-        top: 95px;
+        left: 290px;
+        top: 97px;
     }
 
     .footer__subscribe_input {
