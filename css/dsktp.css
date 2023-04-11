@@ -1,35 +1,18 @@
 @media screen and (min-width: 1158px) {
-    :root {
-        --Primary-Brand-color-Iris: #4D5AE5;
-        --Pressed-state-color-OCEAN: #404BBF;
-        --Headings-color-Navyblue: #2E2F42;
-        --Body-text-color-SLATE: #434455;
-        --white: #FFFFFF;
-        --cornflower: #E7E9FC;
-        --cloud: #F4F4FD;
-        --lightSlate: #8E8F99;
-        --transition-duration-and-funk: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    body {
-        font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: var(--Body-text-color-SLATE);
-    }
 
     .container {
-        padding: 0 16px;
-        margin: 0 auto;
-        min-width: 1158px;
+        max-width: 1158px;
+    }
+
+    .section {
+        padding-top: 120px;
     }
 
     /* ================HEADER================== */
 
     .header__contacts {
         top: 22px;
-        right: 156px;
+        /* right: 156px; */
     }
 
     .header__contacts_list {
@@ -38,7 +21,6 @@
     }
 
     .header__contacts_adress {
-        font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -66,7 +48,6 @@
     /* ===============HERO======================= */
 
     .hero {
-        padding-bottom: 188px;
         max-width: 1440px;
         margin: 0 auto;
         height: auto;
@@ -77,16 +58,7 @@
         flex-direction: column;
         align-items: center;
         gap: 48px;
-        padding-top: 188px;
-    }
-
-    .hero__hdr {
-        padding: 0;
-        display: block;
-    }
-
-    .hero__order-butn {
-        margin: 0;
+        padding: 188px 0;
     }
 
     .hero__order-butn:hover,
@@ -96,13 +68,12 @@
 
     /* ===============OUR GOALS============== */
 
-    .our-goals {
-        margin-top: 24px;
-    }
-
     .our-goals__list {
         flex-wrap: nowrap;
-        gap: 24px;
+    }
+
+    .our-goals__list:nth-last-child(1) {
+        padding-bottom: 0;
     }
 
     .our-goals__list-item {
@@ -139,32 +110,40 @@
     /*==============WHAT ARE WE DOING========== */
 
     .wawd {
-        display: contents;
+        display: block;
     }
 
     .wawd__hdr {
-        font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
         text-align: center;
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: var(--Headings-color-Navyblue);
-        margin: 24px 0 72px;
+        margin-bottom: 72px;
     }
 
     .wawd__list {
         display: flex;
         gap: 24px;
         justify-content: center;
-        padding-bottom: 120px;
     }
 
     .wawd__list_item {}
 
     /* ==============OUR TEAM============ */
+
+    .our-team__hdr {
+        margin-bottom: 72px;
+    }
+
     .our-team__list {
         flex-wrap: nowrap;
+        padding: 0;
+    }
+
+    .our-team__list:nth-last-child(1) {
+        padding-bottom: 0;
     }
 
     .soc-list__link:hover,
@@ -173,11 +152,14 @@
     }
 
     /* =============CUSTUMERS LIST======== */
+    .custumers {
+        padding-bottom: 120px;
+    }
 
     .customers-list {
         max-width: 1158px;
         flex-wrap: nowrap;
-        padding-top: 72px;
+        padding: 0;
     }
 
     .customers__list-item {
@@ -211,30 +193,33 @@
     }
 
     .footer-main__container {
-        flex-wrap: nowrap;
-        max-width: 100%;
+        /* flex-wrap: nowrap; */
+        /* max-width: 100%; */
     }
 
     .footer__container {
-        align-content: flex-start;
-        gap: 100px;
-        margin-left: 0;
+        gap: 120px;
+        margin: 0;
     }
 
     .footer__wraper {
         padding-top: 100px;
         justify-content: flex-start;
-        display: block;
+        /* display: block; */
     }
 
     .footer-web {
         height: 24px;
     }
 
+    .footer-soc {
+        display: block;
+        margin-top: 100px;
+    }
+
     .footer__subscribe {
         margin-left: 80px;
         padding-top: 100px;
-        display: block;
     }
 
     .footer__subscribe_hdr {

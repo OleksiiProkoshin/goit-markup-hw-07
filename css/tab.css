@@ -1,28 +1,7 @@
 @media screen and (min-width: 768px) {
-    :root {
-        --Primary-Brand-color-Iris: #4D5AE5;
-        --Pressed-state-color-OCEAN: #404BBF;
-        --Headings-color-Navyblue: #2E2F42;
-        --Body-text-color-SLATE: #434455;
-        --white: #FFFFFF;
-        --cornflower: #E7E9FC;
-        --cloud: #F4F4FD;
-        --lightSlate: #8E8F99;
-        --transition-duration-and-funk: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    body {
-        font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: var(--Body-text-color-SLATE);
-    }
 
     .container {
-        padding: 0 16px;
-        margin: 0 auto;
-        min-width: 768px;
+        max-width: 768px;
     }
 
     /* ==========HEADER============== */
@@ -49,6 +28,11 @@
         transition: color var(--transition-duration-and-funk);
     }
 
+    .menu-link:focus,
+    .menu-link:hover {
+        color: var(--Pressed-state-color-OCEAN);
+    }
+
     .current {
         color: var(--Pressed-state-color-OCEAN);
     }
@@ -73,7 +57,6 @@
     }
 
     .header__contacts_adress {
-        font-weight: 400;
         font-size: 12px;
         font-style: normal;
         line-height: 1.17;
@@ -99,15 +82,12 @@
     }
 
     .hero__hdr {
-        min-width: 496px;
-        font-weight: 700;
+        max-width: 496px;
         font-size: 56px;
         line-height: 1.07;
-        letter-spacing: 0.02em;
     }
 
     .hero__order-butn {
-        display: block;
         position: unset;
     }
 
@@ -145,10 +125,6 @@
 
     /* ==========TEAM============== */
 
-    .our-team__hdr {
-        padding-bottom: 72px;
-    }
-
     .our-team__list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -166,7 +142,6 @@
         margin: 0 auto;
         gap: 24px;
         max-width: 584px;
-        padding: 72px 0 96px;
     }
 
     .customers__list-item {

@@ -28,7 +28,8 @@
                     </li>
                     <li class="menu-link-item"><a class="menu-link link" href="#">Contacts</a></li>
                 </ul>
-                <button type="button" class="header__menu-btn " data-menu-open>
+                <button type="button" class="header__menu-btn js-open-menu" aria-expanded="false"
+                    aria-controls="mobile-menu">
                     <svg width="32" height="22" class="header_menu-hamburger-icon">
                         <use href="./img/icons.svg#icon-menu-hamburger"></use>
                     </svg></button>
@@ -43,9 +44,9 @@
                 </address>
             </div>
         </nav>
-        <div class="burger__backdrop is-hidden" data-menu>
+        <div class="burger__backdrop is-hidden js-menu-container" id="mobile-menu">
             <div class="burger">
-                <button type="button" class="burger-close-btn" data-menu-close>
+                <button type="button" class="burger-close-btn js-close-menu">
                     <svg width="8" height="8" class="burger__close-btn-icon">
                         <use href="./img/icons.svg#close-btn"></use>
                     </svg>
@@ -161,7 +162,7 @@
                 </ul>
             </div>
         </section>
-        <section class="wawd">
+        <section class="wawd section">
             <h2 class="wawd__hdr">What are we doing</h2>
             <ul class="list wawd__list">
                 <li class="list wawd__list_item">
@@ -190,7 +191,7 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section class="section">
             <div class="our-team section">
                 <h2 class="our-team__hdr">Our Team</h2>
                 <ul class="list our-team__list container">
@@ -343,7 +344,7 @@
         <section class="section">
             <div class="custumers container">
                 <h2 class="custumers-hdr">Customers</h2>
-                <ul class="customers-list list section">
+                <ul class="customers-list list">
                     <li class="customers__list-item"><a class="customers__list-link" href="#"><svg width="104"
                                 height="56" class="customers__list-icon">
                                 <use href="./img/icons.svg#logo"></use>
@@ -373,7 +374,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer ">
         <div class="footer-main__container container">
             <div class="footer__container">
                 <div class="footer__wraper section">
@@ -489,7 +490,10 @@
             </div>
         </div>
     </div>
-    <script src="./js/mobile-menu.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 

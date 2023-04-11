@@ -55,6 +55,7 @@ img {
     padding: 0 16px;
     margin: 0 auto;
     max-width: 428px;
+    width: 100%;
 }
 
 .section {
@@ -144,7 +145,6 @@ img {
 
 .hero__hdr {
     max-width: 320px;
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -182,9 +182,9 @@ img {
     gap: 72px;
 }
 
-.our-goals__list:nth-last-child(1) {
+/* .our-goals__list:nth-last-child(1) {
     padding-bottom: 96px;
-}
+} */
 
 .our-goals__list_icon {
     display: none;
@@ -219,7 +219,6 @@ img {
 }
 
 .our-team__hdr {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -250,7 +249,6 @@ img {
 /* .our-team__list_card-info {} */
 
 .our-team__list_card-hdr {
-    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
@@ -260,7 +258,6 @@ img {
 }
 
 .our-team__list_card-description {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
@@ -302,13 +299,13 @@ img {
 }
 
 .custumers-hdr {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--Headings-color-Navyblue);
+    margin-bottom: 72px;
 }
 
 .customers-list {
@@ -387,7 +384,6 @@ img {
 }
 
 .footer-goal {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -432,7 +428,8 @@ img {
 .footer__subscribe {
     display: flex;
     flex-direction: column;
-    min-width: 398px;
+    max-width: 398px;
+    width: 100%;
     margin: 0 auto;
 }
 
