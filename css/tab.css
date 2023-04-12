@@ -153,6 +153,7 @@
     }
 
     /* ==========FOOTER============== */
+
     .footer-main__container {
         display: flex;
         flex-wrap: wrap;
@@ -206,16 +207,22 @@
         max-width: 586px;
         margin: 0 auto;
         margin-top: 64px;
+        justify-content: center;
+    }
+
+    /* =============PORTFOLIO============= */
+
+    .portfolio {
+        margin: 64px 96px;
     }
 
     .portfolio__container {
-        display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        flex-direction: row;
+        gap: 72px 24px;
     }
 
     .portfolio__card {
         width: 356px;
-        height: 420px;
     }
 }

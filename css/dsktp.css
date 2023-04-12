@@ -12,7 +12,6 @@
 
     .header__contacts {
         top: 22px;
-        /* right: 156px; */
     }
 
     .header__contacts_list {
@@ -129,8 +128,6 @@
         justify-content: center;
     }
 
-    .wawd__list_item {}
-
     /* ==============OUR TEAM============ */
 
     .our-team__hdr {
@@ -152,6 +149,7 @@
     }
 
     /* =============CUSTUMERS LIST======== */
+
     .custumers {
         padding-bottom: 120px;
     }
@@ -192,11 +190,6 @@
         min-width: 1440px;
     }
 
-    .footer-main__container {
-        /* flex-wrap: nowrap; */
-        /* max-width: 100%; */
-    }
-
     .footer__container {
         gap: 120px;
         margin: 0;
@@ -205,7 +198,6 @@
     .footer__wraper {
         padding-top: 100px;
         justify-content: flex-start;
-        /* display: block; */
     }
 
     .footer-web {
@@ -272,9 +264,19 @@
 
     /* ==============PORTFOLIO========== */
 
+    .portfolio {
+        margin: 100px 120px;
+    }
+
+    .portfolio__container {
+        gap: 48px 24px;
+    }
+
     .portfolio__card:hover,
     .portfolio__card:focus {
-        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
     }
 
     .portfolio__card_wrap {
@@ -299,8 +301,9 @@
         background-color: var(--Primary-Brand-color-Iris);
     }
 
-    .portfolio__card:hover .portfolio__overlay,
-    .portfolio__card:focus .portfolio__overlay {
+    .portfolio__card_link:hover .portfolio__overlay,
+    .portfolio__card_link:focus .portfolio__overlay {
         transform: translate(0, 0);
     }
+
 }
